@@ -9,12 +9,12 @@ body {
 
 .container {
     display: flex;
-    position: relative;
     flex-direction: column;
     background-color: #fff;
     color: #444;
     height: 100vh;
     font-family: sans-serif;
+    position: relative;
 }
 
 .title {
@@ -220,7 +220,6 @@ body {
 
 .input-cell.selected {
     border: 2px solid #217346;
-    background-color: rgb(243, 243, 243);
 }
 
 .input-cell.top-selected {
@@ -317,36 +316,36 @@ body {
     margin-right: 10px;
 }
 
-.add-sheet:hover{
+.add-sheet:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
-.sheet-options-modal{
+.sheet-options-modal {
     position: absolute;
     background-color: #fff;
-    box-shadow: 0 8px 16px lightgray;
+    box-shadow: 0 8px 16px 0 lightgray;
     bottom: 4vh;
-    left: 200px;
 }
 
-.option{
+.option {
     padding: 7px 15px 7px 15px;
 }
 
-.option:hover{
+.option:hover {
     background-color: lightgray;
     cursor: default;
 }
 
-.scroller{
+.scroller {
     font-size: 30px;
 }
 
-.scroller:hover{
+.scroller:hover {
     cursor: pointer;
     background-color: lightgray;
 }
+
 
 .sheet-modal-parent {
     position: absolute;
@@ -374,11 +373,11 @@ body {
     font-weight: bold;
 }
 
-.sheet-modal-input-container,.sheet-modal-detail-container {
+.sheet-modal-input-container, .sheet-modal-detail-container {
     padding: 20px;
 }
 
-.sheet-modal-detail-container{
+.sheet-modal-detail-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +385,7 @@ body {
     font-weight: 600;
 }
 
-.sheet-modal-input-title,.sheet-modal-detail-title {
+.sheet-modal-input-title, .sheet-modal-detail-title{
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
@@ -433,31 +432,41 @@ body {
     cursor: pointer;
 }
 
-.file-modal{
+.delete-icon {
+    margin-right: 5px;
+}
+
+.rename-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px ;
+}
+
+.file-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 0vw;
-    position: absolute;
     display: flex;
 }
 
-.file-options-modal{
-    height: 100%;
+.file-options-modal {
     width: 12rem;
     background-color: #217346;
+    height: 100%;
     color: #fff;
 }
 
-
-.file-recent-modal{
+.file-recent-modal {
     background-color: #fff;
     height: 100%;
-    width: calc( 50% - 12rem );
+    width: calc(50% - 12rem);
 }
 
-.file-option{
+.close,.new, .open, .save {
     display: flex;
     align-items: center;
-    
     padding-top: 8px;
     padding-bottom: 8px;
     width: 100%;
@@ -467,23 +476,27 @@ body {
     position: relative;
 }
 
-.close-icon,.new-icon,.open-icon,.save-icon{
+.close-icon,.new-icon, .open-icon, .save-icon {
+    
     position: absolute;
     left: 2rem;
 }
 
-.close{
+.close {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.close-icon{
+
+.close-icon {
     transform: rotate(90deg);
 }
-.file-option:hover{
+
+.close:hover, .new:hover, .open:hover, .save:hover {
     background-color: #1e663f;
     cursor: pointer;
 }
-.file-transparent{
-    height: 100vh;
+
+.file-transparent {
     width: 50%;
+    height: 100vh;
 }
